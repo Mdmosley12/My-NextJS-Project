@@ -83,16 +83,16 @@ html,
 body {
   max-width: 100vw;
   overflow-x: hidden;
+  width: 100%;
+  height: 100%;
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
-  /* background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb)); */
+  background-color: white;
+}
+
+#__next {
+  width: 100%;
 }
 
 a {
@@ -103,5 +103,80 @@ a {
 @media (prefers-color-scheme: dark) {
   html {
     color-scheme: dark;
+  }
+}
+
+header {
+  border: black solid 1px;
+  width: 100%;
+  height: 100px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+nav {
+  border: black solid 1px;
+  height: 100%;
+  display: flex;
+  align-items: flex-end;
+  justify-content:space-evenly;
+  width: 40%;
+}
+
+.nav-button {
+  /* border: black solid 1px; */
+  font-size: 15px;
+  font-family: monospace;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+#signUpAndSearchBox {
+  border: 1px solid black;
+  height: 100%;
+  display: flex;
+  align-items: flex-end;
+  justify-content:space-evenly;
+  width: 30%;
+}
+
+#logoBox {
+  border: 1px black solid;
+  height: 100%;
+  display: flex;
+  align-items: flex-end;
+  justify-content:space-evenly;
+  width: 30%;
+}
+
+footer {
+  border: black solid 1px;
+  width: 100%;
+  height: 10%;
+}
+
+main {
+  border: black solid 1px;
+  width: 100%;
+  height: 1000px;
+}
+
+@media only screen and (max-width: 600px) {
+  body {
+    background-color: lightblue;
+  }
+
+  header {
+    justify-content: flex-start;
+  }
+
+  nav {
+    width: 50%;
+  }
+
+  #signUpAndSearchBox {
+    width: 50%;
   }
 }
