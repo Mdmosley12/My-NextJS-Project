@@ -4,21 +4,21 @@ export const Header = () => {
   return (
     <header>
       <div id="logoBox">
-        <h3>Logo</h3>
+        <h3 id="logo">Logo</h3>
       </div>
       <nav>
-        <Link class="nav-button" href="/">
+        <Link className="nav-button" href="/">
           Home
         </Link>
-        <Link class="nav-button" href="/events">
+        <Link className="nav-button" href="/events">
           Events
         </Link>
-        <Link class="nav-button" href="/about-us">
+        <Link className="nav-button" href="/about-us">
           About Us
         </Link>
       </nav>
       <div id="signUpAndSearchBox">
-        <h3>Login/SignUp & Search Buttons</h3>
+        <h3 id="signUpAndSearch">Login/SignUp & Search Buttons</h3>
       </div>
     </header>
   );

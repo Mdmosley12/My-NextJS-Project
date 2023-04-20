@@ -107,7 +107,7 @@ a {
 }
 
 header {
-  border: black solid 1px;
+  border-bottom: ridge 5px;
   width: 100%;
   height: 100px;
   display: flex;
@@ -117,7 +117,6 @@ header {
 }
 
 nav {
-  border: black solid 1px;
   height: 100%;
   display: flex;
   align-items: flex-end;
@@ -126,7 +125,6 @@ nav {
 }
 
 .nav-button {
-  /* border: black solid 1px; */
   font-size: 15px;
   font-family: monospace;
   font-weight: bold;
@@ -134,16 +132,21 @@ nav {
 }
 
 #signUpAndSearchBox {
-  border: 1px solid black;
   height: 100%;
   display: flex;
   align-items: flex-end;
   justify-content:space-evenly;
   width: 30%;
+}
+
+#signUpAndSearch {
+  font-size: 15px;
+  font-family: monospace;
+  font-weight: bold;
+  margin-bottom: 10px;
 }
 
 #logoBox {
-  border: 1px black solid;
   height: 100%;
   display: flex;
   align-items: flex-end;
@@ -151,16 +154,42 @@ nav {
   width: 30%;
 }
 
+#logo {
+  font-size: 15px;
+  font-family: monospace;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
 footer {
-  border: black solid 1px;
   width: 100%;
-  height: 10%;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#footerTagline {
+  font-size: 15px;
+  font-family: monospace;
+  font-weight: bold;
 }
 
 main {
-  border: black solid 1px;
+  /* border: black solid 1px; */
   width: 100%;
-  height: 1000px;
+}
+
+#homeScreenImageBox {
+  border: 1px solid black;
+  width: 100%;
+  height: auto;
+}
+
+#homeScreenImage {
+  max-width: 100%;
+  width: 100%;
+  height: auto;
 }
 
 @media only screen and (max-width: 600px) {
@@ -178,5 +207,9 @@ main {
 
   #signUpAndSearchBox {
     width: 50%;
+  }
+
+  #logoBox {
+    display: none;
   }
 }

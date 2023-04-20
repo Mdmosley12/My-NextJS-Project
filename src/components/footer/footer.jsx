@@ -1,7 +1,10 @@
 export const Footer = () => {
   return (
     <footer>
-      <p> 2022 Time to Code - A NextJS project</p>
+      <p id="footerTagline">
+        {" "}
+        2023 Time to Code - A project created with NextJS
+      </p>
     </footer>
   );
 };
