@@ -42,12 +42,10 @@ export async function getStaticPaths() {
 
 export async function getStaticProps(context) {
   const paramsId = context?.params.categories;
-  console.log(paramsId);
   const { allEvents } = await import("/data/data.json");
   const eventsByCity = allEvents.filter((event) => {
     return event.city === paramsId ? event.city : null;
   });
-  console.log(eventsByCity);
   return {
     props: {
       eventsByCity: eventsByCity,
