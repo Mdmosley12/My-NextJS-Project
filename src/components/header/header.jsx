@@ -1,24 +1,25 @@
 import Link from "next/link";
+import styles from "/styles/Header.module.css";
 
 export const Header = () => {
   return (
-    <header>
-      <div id="logoBox">
-        <h3 id="logo">Logo</h3>
+    <header id={styles.header}>
+      <div id={styles.logoBox}>
+        <h3 id={styles.logo}>Logo</h3>
       </div>
-      <nav>
-        <Link className="nav-button" href="/">
+      <nav id={styles.nav}>
+        <Link className={styles.nav_button} href="/">
           Home
         </Link>
-        <Link className="nav-button" href="/events">
+        <Link className={styles.nav_button} href="/events">
           Events
         </Link>
-        <Link className="nav-button" href="/about-us">
+        <Link className={styles.nav_button} href="/about-us">
           About Us
         </Link>
       </nav>
-      <div id="signUpAndSearchBox">
-        <h3 id="signUpAndSearch">Login/SignUp & Search Buttons</h3>
+      <div id={styles.signUpAndSearchBox}>
+        <h3 id={styles.signUpAndSearch}>Login/SignUp & Search Buttons</h3>
       </div>
     </header>
   );
