@@ -1,7 +1,12 @@
+import styles from "/styles/Footer.module.css";
+
 export const Footer = () => {
   return (
-    <footer>
-      <p> 2022 Time to Code - A NextJS project</p>
+    <footer id={styles.footer}>
+      <p id={styles.footerTagline}>
+        {" "}
+        2023 Time to Code - A project created with NextJS
+      </p>
     </footer>
   );
 };
