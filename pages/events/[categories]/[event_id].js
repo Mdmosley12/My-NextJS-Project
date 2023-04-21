@@ -35,11 +35,8 @@ export async function getStaticPaths() {
 
 export async function getStaticProps(context) {
   const eventId = context?.params.event_id;
-  // console.log(context);
   const { allEvents } = await import("/data/data.json");
-  // console.log(allEvents);
   const singleEvent = allEvents.find((event) => eventId === event.title);
-  // console.log(eventId, "<<<<<<<<<<<<<,");
   return {
     props: {
       singleEvent: singleEvent,
