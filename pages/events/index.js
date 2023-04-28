@@ -1,9 +1,6 @@
-
-import Image from "next/image";
 import { EventsPage } from "../../src/components/events/events-page";
 
 const Events = ({ data }) => {
-
   return (
     <>
       <EventsPage data={data} />
