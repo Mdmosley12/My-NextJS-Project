@@ -1,29 +1,12 @@
-import Image from "next/image";
-import Link from "next/link";
+import { EventsByCategoryPage } from "../../../src/components/events/categories/eventsByCategories";
 
-const EventsCategoryPage = ({ eventsByCity, pageName }) => {
+const EventsByCategory = ({ eventsByCity, pageName }) => {
   return (
-    <div>
-      <h1>{`Events in ${pageName}`}</h1>
-      {eventsByCity.map((event) => {
-        return (
-          <Link key={event.id} href={`/events/${event.city}/${event.title}`}>
-            <Image
-              alt={event.title}
-              width={250}
-              height={200}
-              src={event.image}
-            />
-            <h2>{event.title}</h2>
-            <p>{event.description}</p>
-          </Link>
-        );
-      })}
-    </div>
+    <EventsByCategoryPage eventsByCity={eventsByCity} pageName={pageName} />
   );
 };
 
-export default EventsCategoryPage;
+export default EventsByCategory;
 
 export async function getStaticPaths() {
   const { events_categories } = await import("/data/data.json");
