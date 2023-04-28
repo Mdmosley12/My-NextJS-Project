@@ -1,32 +1,26 @@
 import Link from "next/link";
-import styles from "/styles/Events.module.css";
+import Image from "next/image";
+import styles from "/styles/EventsPage.module.css";
 
 export const EventsPage = ({ data }) => {
   return (
-    <main id={styles.main}>
-      <h1 id={styles.eventsTitle}>Our Events Page</h1>
-      <div id={styles.cardContainer}>
-        {data.map((event) => {
+    <div>
+      <h1>Our Events Page</h1>
+      <div>
+        {data.map((data) => {
           return (
-            <Link
-              className={styles.eventCard}
-              key={event.id}
-              href={`/events/${event.city}/${event.title}`}
-            >
-              <div
-                className={styles.cardBackground}
-                style={{
-                  backgroundImage: `url(${event.image})`,
-                }}
-              ></div>
-              <div className={styles.content}>
-                <h2 className={styles.eventTitle}>{`${event.title}`}</h2>
-                <h3 className={styles.eventCity}>{`${event.city}`}</h3>
-              </div>
+            <Link key={data.id} href={`/events/${data.id}`}>
+              <Image
+                alt={data.title}
+                width={250}
+                height={200}
+                src={data.image}
+              />
+              <h2>{`${data.title}`}</h2>
             </Link>
           );
         })}
       </div>
-    </main>
+    </div>
   );
 };

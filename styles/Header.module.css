@@ -44,6 +44,7 @@
     font-weight: 800;
     text-shadow: 2px 2px 20px rgb(0, 0, 0, .2);
     margin-bottom: 10px;
+    width: 75%;
   }
   
   #logoBox {
@@ -77,6 +78,9 @@
 
     #signUpAndSearchBox {
         width: 50%;
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-end;
       }
     
       #logoBox {
