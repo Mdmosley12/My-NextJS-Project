@@ -15,7 +15,7 @@ export default function Home({ data }) {
   );
 }
 
-export async function getServerSideProps() {
+export async function getStaticProps() {
   const { events_categories } = await import("../data/data.json");
   return {
     props: {

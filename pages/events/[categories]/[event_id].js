@@ -1,21 +1,10 @@
-import Image from "next/image";
+import { SingleEventPage } from "../../../src/components/events/categories/singleEventPage";
 
-const SingleEventPage = ({ singleEvent }) => {
-  return (
-    <div>
-      <h2>{singleEvent.title}</h2>
-      <Image
-        alt={singleEvent.title}
-        width={500}
-        height={300}
-        src={singleEvent.image}
-      />
-      <p>{singleEvent.description}</p>
-    </div>
-  );
+const SingleEvent = ({ singleEvent }) => {
+  return <SingleEventPage singleEvent={singleEvent} />;
 };
 
-export default SingleEventPage;
+export default SingleEvent;
 
 export async function getStaticPaths() {
   const { allEvents } = await import("/data/data.json");
