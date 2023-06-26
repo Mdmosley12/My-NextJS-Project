@@ -2,6 +2,8 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 
 This project has been deployed on Vercel and can be viewed here:
 
+https://next-js-events-project-sandy.vercel.app/
+
 ## Description
 
 This project aims to create a synamic and responsive website to showcase various events and allow users to browse and register for them. It utilises the Next.js framework, which provides powerful features for building modern web applications.
