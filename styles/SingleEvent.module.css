@@ -16,16 +16,16 @@
 
   #imageDiv {
     max-height: 750px;
-    width: 50%;
-    opacity: 0.90;
+    width: 80%;
+    opacity: 0.80;
     display: flex;
     justify-content: center;
     margin-bottom: 30px;
   }
 
   #image {
-    border-radius: 55%;
-    max-width: 450px;
+    border-radius: 30px;
+    max-width: 590px;
     max-height: 750px;
     height: 100%;
     width: 80%;
