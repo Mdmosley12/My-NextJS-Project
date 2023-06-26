@@ -65,7 +65,7 @@ export const SingleEventPage = ({ singleEvent }) => {
         </div>
         <form onSubmit={handleSubmit}>
           <div id={styles.registerDiv}>
-            <label htmlFor="email">
+            <label id={styles.label} htmlFor="email">
               Want to attend this Event? Register your email below!
             </label>
             <input

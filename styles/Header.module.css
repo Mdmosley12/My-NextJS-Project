@@ -74,12 +74,16 @@
   
     #nav {
       width: 50%;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      align-items: flex-start;
+      padding-left: 10px;
     }
 
     #signUpAndSearchBox {
         width: 50%;
         display: flex;
-        justify-content: flex-end;
         align-items: flex-end;
       }
     

@@ -99,3 +99,9 @@
     line-height: 1;
     text-shadow: 2px 2px 20px rgb(0, 0, 0, .2)
 }
+
+@media only screen and (max-width: 1450px) {
+    .content {
+        top: 55%;
+    }
+}

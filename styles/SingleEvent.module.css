@@ -105,3 +105,40 @@
     color: red;
     font-style: italic;
   }
+
+@media only screen and (max-width: 1450px) {
+
+  #eventContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    gap: 40px;
+  }
+  #imageDiv {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  #image {
+    max-height: 650px;
+    max-width: 500px;
+  }
+
+  #contentDiv {
+    width: 90%;
+    padding-top: 0px;
+    margin-bottom: 0px;
+  }
+
+  #label {
+    width: 70%;
+  }
+
+  #registerDiv {
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
